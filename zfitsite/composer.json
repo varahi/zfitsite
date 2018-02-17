@@ -1,0 +1,19 @@
+{
+    "name": "t3dev/zfitsite",
+    "type": "typo3-cms-extension",
+    "description": "Zfit Site",
+    "authors": [
+        {
+            "name": "Dmitry Vasilev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "T3Dev\\Zfitsite\\": "Classes"
+        }
+    }
+}

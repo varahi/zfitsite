@@ -1,0 +1,17 @@
+<section id="gallery" class="text-center">
+
+	<f:if condition="{data.flexform_title}">
+		<h2 class="mb-4 font-weight-bold">{data.flexform_title}</h2>
+	</f:if> 
+
+<div 
+ 	class="view intro hm-white-light jarallax parallax" data-jarallax='{"speed": 0.2}' 
+ 	style="background-image: url(uploads/tx_gridelements/{data.flexform_image});" >
+  	
+    <div class="full-bg-img">
+        <div class="container">
+					{data.tx_gridelements_view_column_0->f:format.raw()}
+        </div>
+    </div>
+</div> 
+</section>

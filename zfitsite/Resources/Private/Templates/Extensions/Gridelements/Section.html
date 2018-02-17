@@ -1,0 +1,23 @@
+<section id="{data.flexform_section_id}" class="<f:if condition="{data.flexform_text_center}==1">text-center</f:if>">
+	<f:if condition="{data.flexform_title}">
+		<h2 class="mb-4 font-weight-bold">{data.flexform_title}</h2>
+	</f:if>
+	<f:if condition="{data.flexform_text}">
+		<div class="row d-flex justify-content-center mb-4">
+			<div class="col-md-8">
+				<f:format.nl2br><p class="grey-text">{data.flexform_text}</p></f:format.nl2br>
+			</div>
+		</div>	
+	</f:if>
+	
+	<f:if condition="{data.flexform_hide_row}==1">
+  	<f:then>
+			{data.tx_gridelements_view_column_0->f:format.raw()}
+  	</f:then>
+  	<f:else>
+			<div class="row">
+				{data.tx_gridelements_view_column_0->f:format.raw()}
+			</div>
+  	</f:else>
+	</f:if>
+</section>

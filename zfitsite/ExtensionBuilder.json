@@ -1,0 +1,50 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Zfit Site",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "zfitsite",
+        "name": "Zfit Site",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "T3dev.ru",
+                "email": "info@t3dev.ru",
+                "name": "Dmitry Vasilev",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "description": "Zfit Site",
+                "key": "zfitsite",
+                "name": "Zfit Site"
+            }
+        ],
+        "vendorName": "T3Dev"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2017-12-21 09:16",
+        "extension_builder_version": "8.7.0",
+        "be_user": " (1)"
+    }
+}

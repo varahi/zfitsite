@@ -1,0 +1,120 @@
+/* Gallery Masonry
+-------------------------------------------------- */
+#container {
+  padding-bottom: 30px;
+}
+.item {
+    float: left;
+    position: relative;
+    line-height: 1em;
+}
+
+.grid-sizer { width: 33%; }
+.item { width: 33%; }
+
+.item {
+/*  outline: 2px solid #fff;
+  outline-offset: 0px;    */
+ border: 3px solid #fff;
+}
+
+@media screen and (max-width: 1224px) {
+  /* 10 columns for larger screens */
+  .grid-sizer { width: 33.33%; }
+  .item { width: 33.33%; }
+}
+
+@media screen and (max-width: 720px) {
+  /* 10 columns for larger screens */
+  .grid-sizer { width: 50%; }
+  .item { width: 50%; }
+}
+
+@media screen and (max-width: 480px) {
+  /* 10 columns for larger screens */
+  .grid-sizer { width: 100%; }
+  .item { width: 100%; }
+}
+.image{
+    max-width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.image:after {
+    clear:both;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+/*  background-color: rgba(0,0,0,0.5);*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  color: #fff;
+  display: none;
+}
+.overlay .title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.overlay .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.80);
+  width: 100%;
+  margin: 0;
+}
+
+.overlay .description p {
+  margin: 20px;
+}
+.item:hover .overlay {
+  display: block;
+}
+
+/* Grid Gallery
+-------------------------------------------------- */
+/* clearfix because of floats */
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.grid-gallery-item,
+.grid-gallery-container .csc-textpic-imagecolumn {
+  float: left;
+  margin-bottom: 35px;
+}
+.grid-gallery-item img,
+.grid-gallery-container .csc-textpic-imagecolumn img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: bottom;
+}
+.first-item {
+  clear: both;
+}
+.last-row, .last-row ~ .item {
+  margin-bottom: 0;
+}
+.grid-gallery-container {
+  min-height: 210px;
+}
+
+.gallery-caption {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #000;
+  white-space: normal;
+  word-wrap: break-word; 
+}

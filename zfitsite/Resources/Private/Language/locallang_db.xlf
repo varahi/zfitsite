@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-12-21T21:16:16Z" product-name="zfitsite">
+		<header/>
+		<body>
+			<trans-unit id="tx_zfitsite_zfitsite.name">
+				<source>Zfit Site</source>
+			</trans-unit>
+			<trans-unit id="tx_zfitsite_zfitsite.description">
+				<source>Zfit Site</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
